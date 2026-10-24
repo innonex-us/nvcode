@@ -225,11 +225,11 @@ Archive names are stable so scripts can pin them:
 | `SHA256SUMS`, `install.sh`, `install.ps1` | checksums and installers |
 
 Packaged installers carry the version in the file name, for example
-`nvcode-0.2.1-universal-apple-darwin.pkg`,
-`nvcode-0.2.1-x86_64-pc-windows-msvc.msi`,
-`nvcode-0.2.1-x86_64-unknown-linux-gnu.deb`,
-`nvcode-0.2.1-aarch64-unknown-linux-gnu.rpm`,
-`nvcode-0.2.1-x86_64.AppImage`, and the Homebrew formula `nvcode.rb`.
+`nvcode-0.2.2-universal-apple-darwin.pkg`,
+`nvcode-0.2.2-x86_64-pc-windows-msvc.msi`,
+`nvcode-0.2.2-x86_64-unknown-linux-gnu.deb`,
+`nvcode-0.2.2-aarch64-unknown-linux-gnu.rpm`,
+`nvcode-0.2.2-x86_64.AppImage`, and the Homebrew formula `nvcode.rb`.
 
 ## Security
 
