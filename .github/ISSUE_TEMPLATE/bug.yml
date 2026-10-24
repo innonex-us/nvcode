@@ -1,0 +1,68 @@
+name: Bug report
+description: Something the installed nvcode binary does not do as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        nvcode binaries are built from a private source repository, so a
+        reproducer here is what makes a bug fixable. Please paste terminal
+        output rather than describing it.
+  - type: input
+    id: version
+    attributes:
+      label: nvcode version
+      description: Output of `nvcode --version`
+      placeholder: nvcode 0.2.1
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Linux (glibc)
+        - Linux (musl / Alpine)
+        - macOS (Apple silicon)
+        - macOS (Intel)
+        - Windows
+    validations:
+      required: true
+  - type: input
+    id: arch
+    attributes:
+      label: Architecture and install route
+      description: e.g. `aarch64-apple-darwin`, installed with install.sh
+      placeholder: x86_64-unknown-linux-gnu, .deb package
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and prompt
+      description: The exact command, flags, and the prompt or task you sent.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual output
+      description: Paste the terminal text, including any error line. Redact API keys.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: Relevant config
+      description: >
+        `~/.config/nvcode/config.toml`, the project `.nvcode/config.toml`, and
+        any `NVCODE_*` environment variables. Never paste an API key.
+      render: toml

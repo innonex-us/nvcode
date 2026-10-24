@@ -1,0 +1,37 @@
+name: Feature request
+description: An improvement to the shipped CLI.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What the CLI cannot do today
+      description: The task you are trying to finish and where nvcode stops.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would like
+      description: Command, flag, config key, or REPL behaviour, with the wording you expect.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Workaround you are using now
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Inline UI
+        - Agent loop and tools
+        - Multi-agent and worktrees
+        - PHP specialist
+        - MCP
+        - Plugins
+        - Install, update, or packaging
+        - Models and API behaviour
+    validations:
+      required: true
