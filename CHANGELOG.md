@@ -2,7 +2,7 @@
 
 Release notes for the nvcode binaries published in this repository.
 
-## Unreleased
+## 0.2.2
 
 ### Fixed
 
