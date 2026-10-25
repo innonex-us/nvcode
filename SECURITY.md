@@ -4,7 +4,7 @@
 
 Please report anything that lets nvcode escape its intended limits, leak an API
 key, or run something the permission mode should have blocked through a
-[private security advisory](https://github.com/innonex-us/nvcode/security/advisories/new)
+[private security advisory](https://gitlab.com/mrokonuzzaman040/nvcode/-/security)
 rather than a public issue. Include `nvcode --version`, your OS and
 architecture, and the exact command.
 

@@ -2,7 +2,7 @@
 
 Every release in this repository attaches the binaries, installers, checksums,
 and install scripts. Release page:
-<https://github.com/innonex-us/nvcode/releases>
+<https://gitlab.com/mrokonuzzaman040/nvcode/-/releases>
 
 The examples use `X.Y.Z` for the version you are installing. `nvcode --version`
 needs no API key; a key is only required when you call a model.
@@ -13,13 +13,13 @@ needs no API key; a key is only required when you call a model.
 latest release, check it against `SHA256SUMS`, and copy `nvcode` onto `PATH`.
 
 ```sh
-curl --proto '=https' --tlsv1.2 -fsSL https://github.com/innonex-us/nvcode/releases/latest/download/install.sh | sh
+curl --proto '=https' --tlsv1.2 -fsSL https://gitlab.com/mrokonuzzaman040/nvcode/-/releases/permalink/latest/downloads/install.sh | sh
 ```
 
 Windows PowerShell:
 
 ```powershell
-irm https://github.com/innonex-us/nvcode/releases/latest/download/install.ps1 | iex
+irm https://gitlab.com/mrokonuzzaman040/nvcode/-/releases/permalink/latest/downloads/install.ps1 | iex
 ```
 
 | Variable | Effect |
@@ -34,8 +34,8 @@ The glibc Linux archives are built on Ubuntu 24.04. On an older glibc, set
 ## Verify a download by hand
 
 ```sh
-curl -fsSLO https://github.com/innonex-us/nvcode/releases/download/vX.Y.Z/SHA256SUMS
-curl -fsSLO https://github.com/innonex-us/nvcode/releases/download/vX.Y.Z/nvcode-aarch64-apple-darwin.tar.gz
+curl -fsSLO https://gitlab.com/mrokonuzzaman040/nvcode/-/releases/vX.Y.Z/downloads/SHA256SUMS
+curl -fsSLO https://gitlab.com/mrokonuzzaman040/nvcode/-/releases/vX.Y.Z/downloads/nvcode-aarch64-apple-darwin.tar.gz
 shasum -a 256 -c SHA256SUMS --ignore-missing
 tar -xzf nvcode-aarch64-apple-darwin.tar.gz
 install -m 755 nvcode /usr/local/bin/nvcode   # or ~/.local/bin
@@ -50,7 +50,7 @@ checksums filled in at publish time.
 
 ```sh
 curl -fsSL -o nvcode.rb \
-  https://github.com/innonex-us/nvcode/releases/download/vX.Y.Z/nvcode.rb
+  https://gitlab.com/mrokonuzzaman040/nvcode/-/releases/vX.Y.Z/downloads/nvcode.rb
 brew install ./nvcode.rb
 ```
 
@@ -68,7 +68,7 @@ blocks.
 
 ```sh
 curl -fsSL -o nvcode.pkg \
-  https://github.com/innonex-us/nvcode/releases/download/vX.Y.Z/nvcode-X.Y.Z-universal-apple-darwin.pkg
+  https://gitlab.com/mrokonuzzaman040/nvcode/-/releases/vX.Y.Z/downloads/nvcode-X.Y.Z-universal-apple-darwin.pkg
 sudo installer -pkg nvcode.pkg -target /
 nvcode --version
 ```
@@ -105,7 +105,7 @@ certificate is configured.
 
 ```sh
 curl -fsSL -o nvcode.deb \
-  https://github.com/innonex-us/nvcode/releases/download/vX.Y.Z/nvcode-X.Y.Z-x86_64-unknown-linux-gnu.deb
+  https://gitlab.com/mrokonuzzaman040/nvcode/-/releases/vX.Y.Z/downloads/nvcode-X.Y.Z-x86_64-unknown-linux-gnu.deb
 sudo apt install ./nvcode.deb
 ```
 
@@ -131,7 +131,7 @@ icons at 16, 32, 48, 64, 128, 256, 512, and 1024 px.
 
 ```sh
 curl -fsSL -o nvcode.AppImage \
-  https://github.com/innonex-us/nvcode/releases/download/vX.Y.Z/nvcode-X.Y.Z-x86_64.AppImage
+  https://gitlab.com/mrokonuzzaman040/nvcode/-/releases/vX.Y.Z/downloads/nvcode-X.Y.Z-x86_64.AppImage
 chmod +x nvcode.AppImage
 ./nvcode.AppImage --version
 ```

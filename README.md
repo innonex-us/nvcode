@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/innonex-us/nvcode/releases/latest"><img src="https://img.shields.io/github/v/release/innonex-us/nvcode?label=release&color=76B900" alt="Latest release"></a>
+  <a href="https://gitlab.com/mrokonuzzaman040/nvcode/-/releases/permalink/latest"><img src="https://gitlab.com/mrokonuzzaman040/nvcode/-/badges/release.svg" alt="Latest release"></a>
   <img src="https://img.shields.io/badge/license-MIT-76B900" alt="MIT license">
   <img src="https://img.shields.io/badge/platforms-Linux%20%C2%B7%20macOS%20%C2%B7%20Windows-lightgrey" alt="Linux, macOS and Windows">
 </p>
@@ -26,13 +26,13 @@ session sits near 5 MB of RSS.
 Linux and macOS:
 
 ```sh
-curl --proto '=https' --tlsv1.2 -fsSL https://github.com/innonex-us/nvcode/releases/latest/download/install.sh | sh
+curl --proto '=https' --tlsv1.2 -fsSL https://gitlab.com/mrokonuzzaman040/nvcode/-/releases/permalink/latest/downloads/install.sh | sh
 ```
 
 Windows (PowerShell):
 
 ```powershell
-irm https://github.com/innonex-us/nvcode/releases/latest/download/install.ps1 | iex
+irm https://gitlab.com/mrokonuzzaman040/nvcode/-/releases/permalink/latest/downloads/install.ps1 | iex
 ```
 
 Both scripts pick the archive for this machine, verify it against
@@ -42,7 +42,7 @@ Unix and `%LOCALAPPDATA%\nvcode` on Windows). `NVCODE_MUSL=1` forces the static
 x86_64 musl build, which is what Alpine and other musl systems want.
 
 Packages, installers, and the Homebrew formula are attached to every
-[release](https://github.com/innonex-us/nvcode/releases). See
+[release](https://gitlab.com/mrokonuzzaman040/nvcode/-/releases). See
 [docs/INSTALL.md](docs/INSTALL.md) for the `.pkg`, `.msi`, `.deb`, `.rpm`,
 AppImage, and Homebrew routes, with verification and uninstall notes.
 
